@@ -1,0 +1,39 @@
+{
+  "name": "AuthService",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Max</h1>\r <h2 align=\"center\">It is a project for test of concept. The idea is to have an authentication service so as not to have to create a login for each website or service that is created. Allowing greater control and greater reuse.</h2>\r <p align=\"left\"> <img src=\"https://komarev.com/ghpvc/?username=maxmatcor&label=Profile%20views&color=0e75b6&style=flat\" alt=\"maxmatcor\" /> </p>",
+  "main": "index.js",
+  "scripts": {
+    "build":"babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxmatcor/AuthService.git"
+  },
+  "keywords": [],
+  "author": "Mmc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxmatcor/AuthService/issues"
+  },
+  "homepage": "https://github.com/maxmatcor/AuthService#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "nodemon": "^2.0.7"
+  }
+}
